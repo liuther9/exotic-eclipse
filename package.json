@@ -1,10 +1,10 @@
 {
-  "predeploy": "npm run build", "deploy": "gh-pages -d build",
   "homepage":"https://liuther9.github.io/exotic-eclipse)",
   "name": "exotic-eclipse",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
+    "predeploy": "npm run build", "deploy": "gh-pages -d build",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
