@@ -1,0 +1,134 @@
+---
+import Feature from "../components/Feature.astro";
+import Testimonial from "../components/Testimonial.astro";
+import Layout from "../layouts/Layout.astro";
+
+---
+
+<Layout title="Welcome to Hezafren Industry.">
+	<main>
+		<section class="hero bg-gray-800 text-white">
+			<div class="container mx-auto flex flex-col items-center px-4 py-16 md:py-24">
+				<img
+					src="/images/hero.jpg"
+					alt="Global map with connecting dots and arrows"
+					class="w-full rounded-lg mb-8"
+				/>
+				<h1 class="text-3xl font-bold mb-4">Expand Your Reach. Conquer New Markets.</h1>
+				<p class="text-xl leading-relaxed mb-8">
+					Empowering brands to achieve global success with comprehensive branding and expansion services.
+				</p>
+				<a href="/guide" class="btn btn-primary">Get Your Free Expansion Strategy Guide</a>
+			</div>
+		</section>
+		<section class="features bg-white py-16">
+			<div class="container mx-auto px-4">
+				<h2 class="text-2xl font-bold text-center mb-8">Key Features</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+					<Feature
+						icon="social-media"
+						title="Social Media Management"
+						description="Amplify your brand voice and engage your audience across the globe."
+					/>
+					<Feature
+						icon="website"
+						title="Website & Catalog Development"
+						description="Create a multilingual and culturally relevant online presence."
+					/>
+					<Feature
+						icon="brandbook"
+						title="Brandbook & Business Card Creation"
+						description="Develop a cohesive brand identity that resonates globally."
+					/>
+					<Feature
+						icon="logo"
+						title="Logo Design"
+						description="Craft a unique and memorable logo that stands out in international markets."
+					/>
+					<Feature
+						icon="trade-show"
+						title="Trade Show Organization"
+						description="Showcase your brand at key international trade shows for maximum exposure."
+					/>
+					<Feature
+						icon="market-expansion"
+						title="Market Expansion"
+						description="Develop a strategic expansion plan and enter new markets with success."
+					/>
+					<Feature
+						icon="foreign-market"
+						title="Foreign Market Registration Support"
+						description="Navigate the legal complexities of entering new markets with expert guidance."
+					/>
+					<Feature
+						icon="seo"
+						title="SEO & Target"
+						description="Reach your target audience globally with effective SEO and targeting strategies."
+					/>
+					<Feature
+						icon="chatbot"
+						title="Chatbot & Phone System Integration"
+						description="Provide 24/7 customer support in multiple languages."
+					/>
+					<Feature
+						icon="analytics"
+						title="Web Analytics & Reporting"
+						description="Track your global performance and make data-driven decisions."
+					/>
+				</div>
+			</div>
+		</section>
+		<section class="client-success bg-gray-100 py-16">
+			<div class="container mx-auto px-4">
+				<h2 class="text-2xl font-bold text-center mb-8">Trusted by Leading Brands</h2>
+				<ul class="flex flex-wrap justify-center items-center mb-8">
+					<li>
+						<img src="/images/client-logo1.png" alt="Client Logo 1" class="w-24 h-24 rounded-full mb-4" />
+					</li>
+					<li>
+						<img src="/images/client-logo2.png" alt="Client Logo 2" class="w-24 h-24 rounded-full mb-4" />
+					</li>
+					<li>
+						<img src="/images/client-logo3.png" alt="Client Logo 3" class="w-24 h-24 rounded-full mb-4" />
+					</li>
+				</ul>
+		
+				<h2 class="text-2xl font-bold text-center mb-8">What Our Clients Say</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+					<Testimonial
+						name="John Doe"
+						company="Company Name"
+						quote="Since working with [Company Name], we've seen a 200% increase in our global website traffic and a 30% increase in sales from international customers. Their services have been invaluable in helping us achieve our expansion goals."
+					/>
+					<Testimonial
+						name="Jane Smith"
+						company="Another Company"
+						quote="The team at [Company Name] is incredibly knowledgeable and experienced in international branding and expansion. They were able to guide us through the entire process, from market research to legal compliance. We highly recommend their services to any company looking to expand their global reach."
+					/>
+				</div>
+			</div>
+		</section>
+
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+			<Testimonial
+				name="John Doe"
+				company="Company Name"
+				quote="Since working with [Company Name], we've seen a 200% increase in our global website traffic and a 30% increase in sales from international customers. Their services have been invaluable in helping us achieve our expansion goals."
+			/>
+			<Testimonial
+				name="Jane Smith"
+				company="Another Company"
+				quote="The team at [Company Name] is incredibly knowledgeable and experienced in international branding and expansion. They were able to guide us through the entire process, from market research to legal compliance. We highly recommend their services to any company looking to expand their global reach."
+			/>
+		</div>
+
+		<section class="call-to-action bg-primary text-white py-16">
+			<div class="container mx-auto px-4">
+				<h2 class="text-2xl font-bold text-center mb-4">Ready to Launch Your Global Brand?</h2>
+				<p class="text-lg leading-relaxed text-center mb-8">Schedule a free consultation to discuss your personalized expansion strategy.</p>
+				<a href="/contact" class="btn btn-light">Schedule Your Consultation Today</a>
+			</div>
+		</section>
+				
+	</main>
+</Layout>
