@@ -6,15 +6,17 @@ interface Props {
 }
 const { quote, name, company } = Astro.props;
 ---
-<div class="testimonial rounded-lg shadow-lg px-8 py-4">
-  <p class="text-lg leading-relaxed mb-4">
-    {{ quote }}
-  </p>
-  <div class="flex items-center mb-2">
-    <img src="/images/avatar.png" alt="Testimonial avatar" class="w-12 h-12 rounded-full mr-4" />
-    <div>
-      <h4 class="text-lg font-bold">{{ name }}</h4>
-      <p class="text-sm text-gray-600">{{ company }}</p>
+<div class="testimonial rounded-lg shadow-lg overflow-hidden px-8 py-6 h-full">
+  <div class="flex flex-col h-full">
+    <div class="flex items-center mb-4">
+      <img src="/images/{ image }" alt="Testimonial avatar" class="w-14 h-14 rounded-full mr-4 bg-black object-cover overflow-hidden" />
+      <div class="flex flex-col justify-center">
+        <h4 class="text-lg font-bold mb-1">{ name }</h4>
+        <p class="text-sm text-gray-600">{ company }</p>
+      </div>
     </div>
+    <p class="text-lg leading-relaxed">
+      “{ quote }”
+    </p>
   </div>
 </div>
